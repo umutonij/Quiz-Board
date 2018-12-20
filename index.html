@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Quiz Board</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Quiz Board</h1>
+                <p>This quiz will be having different questions about JavaScript.</p>
+            </div>
+            <div class="well">
+                <form id="Quiz" action="index.html" method="POST" name="Quiz">
+                 <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p><strong> Q1. Which of the following function of Boolean object returns the primitive value of the Boolean object?</strong></p>
+                  </div>    
+                    <br>
+                    <input type="radio" name="questionOne" id="mc" value="wrong">toSource()<br>
+                    <input type="radio" name="questionOne" id="mc" value="correct">valueOf()<br>
+                    <input type="radio" name="questionOne" id="mc" value="wrong">toString()<br>
+                    <input type="radio" name="questionOne" id="mc" value="wrong">None of the above.<br>
+                 </div>
+            </div>
+            <div class="well">
+              <div class="panel panel-default">
+                    <p><strong> Q2. Which built-in method returns the calling string value converted to lower case?</strong></p>
+                    <br>
+                    <input type="radio" name="questionTwo" id="mc" value="wrong">changeCase()<br>
+                    <input type="radio" name="questionTwo" id="mc" value="wrong">toLower()<br>
+                    <input type="radio" name="questionTwo" id="mc" value="correct">toLowerCase()<br>
+                <input type="radio" name="questionTwo" id="mc" value="wrong"> None of the above.<br>
+                
+            </div>
+            <div class="well">
+                    <p><strong> Q3. Where is the correct place to insert a JavaScript?</strong></p>
+                    <br>
+                    <input type="radio" name="questionThree" id="mc" value="correct">The body section.<br>
+                    <input type="radio" name="questionThree" id="mc" value="wrong">Both the head section and the body section are correct<br>
+                    <input type="radio" name="questionThree" id="mc" value="wrong">The head section<br>
+                    <input type="radio" name="questionThree" id="mc" value="wrong"> None of the above.<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q4. Which of the following function of string object combines the text of two strings and
+                            returns a new string?</strong></p>
+                    <br>
+                    <input type="radio" name="questionFour" id="mc" value="wrong">merge()<br>
+                    <input type="radio" name="questionFour" id="mc" value="wrong">add()<br>
+                    <input type="radio" name="questionFour" id="mc" value="correct">concat()<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q5. Which of the following is an advantage of using JavaScript?</strong></p>
+                    <br>
+                    <input type="radio" name="questionFive" id="mc" value="wrong">Less server interaction<br>
+                    <input type="radio" name="questionFive" id="mc" value="wrong">Immediate feedback to the visitors()<br>
+                    <input type="radio" name="questionFive" id="mc" value="wrong">Increased interactivity<br>
+                    <input type="radio" name="questionFive" id="mc" value="correct">All of the above.<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q6. How does a FOR loop start?</strong></p>
+                    <br>
+                    <input type="radio" name="questionSix" id="mc" value="wrong">for (i <= 5; i++)<br>
+                    <input type="radio" name="questionSix" id="mc" value="wrong">for i = 1 to 5<br>
+                    <input type="radio" name="questionSix" id="mc" value="wrong">for (i = 0; i <= 5)<br>
+                    <input type="radio" name="questionSix" id="mc" value="correct">for (i = 0; i <= 5; i++).<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q7. How do you declare a JavaScript variable?</strong></p>
+                    <br>
+                    <input type="radio" name="questionSeven" id="mc" value="wrong">v carName;<br>
+                    <input type="radio" name="questionSeven" id="mc" value="wrong">var carName;<br>
+                    <input type="radio" name="questionSeven" id="mc" value="correct">variable carName;.<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q8. How to write an IF statement for executing some code if "i" is NOT equal to 5?</strong></p>
+                    <br>
+                    <input type="radio" name="questionEight" id="mc" value="wrong"> if (i <> 5)<br>
+                    <input type="radio" name="questionEight" id="mc" value="correct"> if (i != 5)<br>
+                    <input type="radio" name="questionEight" id="mc" value="wrong">if i <> 5<br>
+                    <input type="radio" name="questionEight" id="mc" value="wrong"> if i =! 5 then.<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q9. What is the correct way to write a JavaScript array?</strong></p>
+                    <br>
+                    <input type="radio" name="questionNine" id="mc" value="wrong"> var colors = "red", "green", "blue"<br>
+                    <input type="radio" name="questionNine" id="mc" value="wrong"> var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")<br>
+                    <input type="radio" name="questionNine" id="mc" value="correct"> var colors = ["red", "green", "blue"]<br>
+                    <input type="radio" name="questionNine" id="mc" value="wrong"> var colors = (1:"red", 2:"green", 3:"blue").<br>
+            </div>
+            <div class="well">
+                    <p><strong> Q10. Which operator is used to assign a value to a variable?</strong></p>
+                    <br>
+                    <input type="radio" name="questionTen" id="mc" value="wrong"> *<br>
+                    <input type="radio" name="questionTen" id="mc" value="wrong"> =<br>
+                    <input type="radio" name="questionTen" id="mc" value="correct"> -<br>
+                    <input type="radio" name="questionTen" id="mc" value="wrong"> +.<br>
+            </div>
+                    <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-primary" onClick="check();">
+                </form>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <title>Quiz Board</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    
-</body>
+        </div>
+    </body>
 </html>
