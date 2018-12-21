@@ -8,35 +8,42 @@
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron">
-                <h1>Quiz Board</h1>
-                <p>This quiz will be having different questions about JavaScript.</p>
-            </div>
+                <div class="row">
+                    <div class="col-md-9">
+                     <div class="jumbotron">
+                      <h1>Quiz Board</h1>
+                       <p>This quiz will be having different questions about JavaScript.</p>
+                     </div>
+          <form>
+           <div class="form-group">
             <div class="well">
-                <form id="Quiz" action="index.html" method="POST" name="Quiz">
+                
                  <div class="panel panel-default">
                   <div class="panel-heading">
                     <p><strong> Q1. Which of the following function of Boolean object returns the primitive value of the Boolean object?</strong></p>
                   </div>    
                     <br>
-                    <input type="radio" name="questionOne" id="mc" value="wrong">toSource()<br>
-                    <input type="radio" name="questionOne" id="mc" value="correct">valueOf()<br>
-                    <input type="radio" name="questionOne" id="mc" value="wrong">toString()<br>
-                    <input type="radio" name="questionOne" id="mc" value="wrong">None of the above.<br>
+                    <input type="radio" name="questionOne" value="false"  required>toSource()<br>
+                    <input type="radio" name="questionOne" value="true"  class="correct" required>valueOf()<br>
+                    <input type="radio" name="questionOne" value="false"  required>toString()<br>
+                    <input type="radio" name="questionOne" value="false"  required>None of the above.<br>
                  </div>
             </div>
+           </div>
+           <div class="form-group">
             <div class="well">
               <div class="panel panel-default">
                  <div class="panel-heading">
                     <p><strong> Q2. Which built-in method returns the calling string value converted to lower case?</strong></p>
                  </div>   
                     <br>
-                    <input type="radio" name="questionTwo" id="mc" value="wrong">changeCase()<br>
-                    <input type="radio" name="questionTwo" id="mc" value="wrong">toLower()<br>
-                    <input type="radio" name="questionTwo" id="mc" value="correct">toLowerCase()<br>
-                <input type="radio" name="questionTwo" id="mc" value="wrong"> None of the above.<br>
+                    <input type="radio" name="questionTwo" value="false" required>changeCase()<br>
+                    <input type="radio" name="questionTwo" value="false" required>toLower()<br>
+                    <input type="radio" name="questionTwo" value="true"  class="correct" required>toLowerCase()<br>
+                <input type="radio"     name="questionTwo"     value="false" required> None of the above.<br>
               </div>
             </div>
+           </div>
             <div class="well">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -132,9 +139,18 @@
                     <input type="radio" name="questionTen" id="mc" value="wrong"> +.<br>
               </div>
             </div>
-                    <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-primary" onClick="check();">
+            <input type="submit" class="btn btn-primary" value="Submit">
                 </form>
-
+                </div>
+                <div class="col-md-3">
+                <h1 id="result"></h1>
+                </div>
+                </div>
         </div>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     </body>
 </html>
