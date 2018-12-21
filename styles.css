@@ -1,9 +1,15 @@
 
 body{
-  font-size: 16px;  
+  font-size: 16px; 
+  background-color: blanchedalmond; 
   
 }
-
+.jumbotron h1{
+    color: peru;
+    background-image: url('images/quiz.jpg');
+   background-repeat: no-repeat;
+   
+}
 .col-md-9{
     position: relative;
     right: -90px;
@@ -18,7 +24,17 @@ h2 {
     background-color: rgb(182, 167, 150);
   }
   h3{
-      color: rgb(214, 99, 21);
+      color: rgba(23, 90, 214, 0.904);
       text-decoration: underline;
       font-size: 20px;
+  }
+  #result{
+      visibility: hidden;
+      background-color: burlywood;
+      height:300px;
+  }
+  #result h4{
+    text-align: center;
+    transform: translate(0%,190%);
+    font-size: 40px;
   }
