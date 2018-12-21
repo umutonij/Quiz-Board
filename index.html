@@ -9,22 +9,28 @@
     <body>
         <div class="container">
                 <div class="row">
-                    <div id="quiz">
                     <div class="col-md-9">
                      <div class="jumbotron">
                       <h1>Quiz Board</h1>
                        <p>This quiz will be having different questions about JavaScript.</p>
                      </div>
-                     <h2>Quiz Instructions</h2>
+                     <div class="panel panel-default">
+                     <div class="panel-heading">
+                     <h3>Quiz Instructions</h3>
+                    </div>
                       <ul>
                           <li>Make sure your mobile phone is switched off and place it at the front together with any bags, books, coats etc. Then find your
                                 seat</li>
                           <li>Place your Student ID card on your desk next to your attendance card.</li>
                           <li>Remember that talking is not allowed at any time in the exam hall.</li>
                           <li>You are allowed to bring tissues and a drink (but not food) into the exam.</li> 
-                          <li>Normally, you are required to answer all questions.</li>    
+                          <li>Normally, you are required to answer all questions.</li> 
+                          <li>Section A will have 5 questions and Section B will have 5 questions too.</li>
+                          <li>This exam will have 2 hours.</li>   
                       </ul>
+                     </div>  
           <form>
+           <h2>SECTION A</h2>
            <div class="form-group">
             <div class="well">
                 
@@ -96,6 +102,7 @@
               </div>
             </div>
            </div>
+           <h2>SECTION B</h2>
            <div class="form-group">
             <div class="well">
               <div class="panel panel-default">
@@ -159,7 +166,7 @@
                 </div>
                     <br>
                     <input type="radio" name="questionTen" value="false" required> *<br>
-                    <input type="radio" name="questionTen" value="true"  class="correct"> =<br>
+                    <input type="radio" name="questionTen" value="true"  class="correct" required> =<br>
                     <input type="radio" name="questionTen" value="false" required> -<br>
                     <input type="radio" name="questionTen" value="false" required> +.<br>
               </div>
@@ -168,9 +175,8 @@
             <input type="submit" class="btn btn-primary" value="Submit">
                 </form>
                 </div>
-                </div>
                 <div class="col-md-3">
-                <h2 id="result"></h1>
+                <h1 id="result"></h1>
                 </div>
                 </div>
         </div>
