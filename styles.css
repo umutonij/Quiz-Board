@@ -1,8 +1,12 @@
 
 body{
     font-size: 16px; 
-    background-color: rgb(182, 142, 82); 
-    
+    background-image: url('images/background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img{
+      float: none;
   }
   .jumbotron h1{
       color: peru;
@@ -39,5 +43,8 @@ body{
         text-align: center;
         font-size: 60px;
       }
+      
     
-  
+  .btn-primary{
+      width: 100px;
+  }
