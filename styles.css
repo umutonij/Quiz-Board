@@ -1,40 +1,43 @@
 
 body{
-  font-size: 16px; 
-  background-color: blanchedalmond; 
-  
-}
-.jumbotron h1{
-    color: peru;
-    background-image: url('images/quiz.jpg');
-   background-repeat: no-repeat;
-   
-}
-.col-md-9{
-    position: relative;
-    right: -90px;
-    border: 10px solid black;
-}
-h2 {
-    color: brown;
-    font-style: italic;
-    text-decoration: underline;
+    font-size: 16px; 
+    background-color: rgb(182, 142, 82); 
+    
   }
-  .well{
-    background-color: rgb(182, 167, 150);
+  .jumbotron h1{
+      color: peru;
+      background-image: url('images/quiz.jpg');
+     background-repeat: no-repeat;
+     
   }
-  h3{
-      color: rgba(23, 90, 214, 0.904);
+  .col-md-9{
+      position: relative;
+      right: -90px;
+      border: 10px solid black;
+  }
+  h2 {
+      color: brown;
+      font-style: italic;
       text-decoration: underline;
-      font-size: 20px;
-  }
-  #result{
-      visibility: hidden;
-      background-color: burlywood;
-      height:300px;
-  }
-  #result h4{
-    text-align: center;
-    transform: translate(0%,190%);
-    font-size: 40px;
-  }
+    }
+    .well{
+      background-color: rgb(182, 167, 150);
+    }
+    h3{
+        color: rgba(23, 90, 214, 0.904);
+        text-decoration: underline;
+        font-size: 20px;
+    }
+    #tenth-p {
+        display: none;
+    }
+    #result{
+        background-color: rgb(197, 168, 131);
+        height:300px;
+
+    } #result{
+        text-align: center;
+        font-size: 60px;
+      }
+    
+  
