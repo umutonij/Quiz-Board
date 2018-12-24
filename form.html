@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Quiz Board</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                     <div class="jumbotron">
+                      <h1>Quiz Board</h1>
+                       <p>This quiz will be having different questions about JavaScript.</p>
+                     </div>
+                     <div class="panel panel-default">
+                     <div class="panel-heading">
+                     <h3>Quiz Instructions</h3>
+                    </div>
+                      <ul>
+                          <li>Make sure your mobile phone is switched off and place it at the front together with any bags, books, coats etc. Then find your
+                                seat</li>
+                          <li>Place your Student ID card on your desk next to your attendance card.</li>
+                          <li>Remember that talking is not allowed at any time in the exam hall.</li>
+                          <li>You are allowed to bring tissues and a drink (but not food) into the exam.</li> 
+                          <li>This exam will have 2 sections. and it is a multiple choice of 10 questions.</li>
+                          <li>Normally, you are required to answer all questions.</li> 
+                          <li>Section A will have 5 questions and Section B will have 5 questions too.</li>
+                          <li>This exam will have 2 hours.</li>   
+                      </ul>
+                     </div>  
+          <form action="index.html" method="POST" id="quiz" name="quiz">
+           <h2>SECTION A</h2>
+           
+            <div class="well">
+                
+                 <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p><strong> Q1. Which of the following function of Boolean object returns the primitive value of the Boolean object?</strong></p>
+                  </div>    
+                    <br>
+                    <label><input type="radio" name="questionOne" value="false"  required>toSource()</label><br>
+                    <label><input type="radio" name="questionOne" value="true"  class="correct" required>valueOf()</label><br>
+                    <label><input type="radio" name="questionOne" value="false"  required>toString()</label><br>
+                    <label><input type="radio" name="questionOne" value="false"  required>None of the above.</label><br>
+                 </div>
+            </div>
+           
+            <div class="well">
+              <div class="panel panel-default">
+                 <div class="panel-heading">
+                    <p><strong> Q2. Which built-in method returns the calling string value converted to lower case?</strong></p>
+                 </div>   
+                    <br>
+                    <label><input type="radio" name="questionTwo" value="false" required>changeCase()</label><br>
+                    <label><input type="radio" name="questionTwo" value="false" required>toLower()</label><br>
+                    <label><input type="radio" name="questionTwo" value="true"  class="correct" required>toLowerCase()</label><br>
+                    <label><input type="radio" name="questionTwo" value="false" required> None of the above.</label><br>
+              </div>
+            </div>
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q3. Where is the correct place to insert a JavaScript?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionThree" value="true" class="correct" required>The body section.</label><br>
+                    <label><input type="radio" name="questionThree" value="false" required>Both the head section and the body section are correct</label><br>
+                    <label><input type="radio" name="questionThree" value="false" required>Both the head section and the body section are correct</label><br>
+                    <label><input type="radio" name="questionThree" value="false" required>The head section</label><br>
+                    <label><input type="radio" name="questionThree" value="false" required> None of the above.</label><br>
+              </div>
+            </div>
+           
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q4. Which of the following function of string object combines the text of two strings and
+                            returns a new string?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionFour" value="false" required>merge()</label><br>
+                    <label><input type="radio" name="questionFour" value="false" required>add()</label><br>
+                    <label><input type="radio" name="questionFour" value="true"  class="correct" required>concat()</label><br>
+              </div>
+            </div>
+           
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q5. Which of the following is an advantage of using JavaScript?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionFive" value="false" required>Less server interaction</label><br>
+                    <label><input type="radio" name="questionFive" value="false" required>Immediate feedback to the visitors()</label><br>
+                    <label><input type="radio" name="questionFive" value="false" required>Increased interactivity</label><br>
+                    <label><input type="radio" name="questionFive" value="true"  class="correct" required>All of the above.</label><br>
+              </div>
+            </div>
+           
+           <h2>SECTION B</h2>
+           <div class="form-group">
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q6. How does a FOR loop start?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionSix" value="false" required>for (i <= 5; i++)</label><br>
+                    <label><input type="radio" name="questionSix" value="false" required>for i = 1 to 5</label><br>
+                    <label><input type="radio" name="questionSix" value="false" required>for (i = 0; i <= 5)</label><br>
+                    <label><input type="radio" name="questionSix" value="true"  class="correct" required>for (i = 0; i <= 5; i++).</label><br>
+              </div>
+            </div>
+           </div>
+        
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q7. How do you declare a JavaScript variable?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionSeven" value="false" required>v carName;</label><br>
+                    <label><input type="radio" name="questionSeven" value="true"  class="correct" required>var carName;</label><br>
+                    <label><input type="radio" name="questionSeven" value="false" required>variable carName;.</label><br>
+              </div>
+            </div>
+           
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q8. How to write an IF statement for executing some code if "i" is NOT equal to 5?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionEight" value="false" required> if (i <> 5)</label><br>
+                    <label><input type="radio" name="questionEight" value="true"  class="correct" required> if (i != 5)</label><br>
+                    <label><input type="radio" name="questionEight" value="false" required>if i <> 5</label><br>
+                    <label><input type="radio" name="questionEight" value="false" required> if i =! 5 then.</label><br>
+              </div>
+            </div>
+           
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q9. What is the correct way to write a JavaScript array?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionNine" value="false" required> var colors = "red", "green", "blue"</label><br>
+                    <label><input type="radio" name="questionNine" value="false" required> var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")</label><br>
+                    <label><input type="radio" name="questionNine" value="true"  class="correct" required> var colors = ["red", "green", "blue"]</label><br>
+                    <label><input type="radio" name="questionNine" value="false" required> var colors = (1:"red", 2:"green", 3:"blue").</label><br>
+              </div>
+            </div>
+           
+           
+            <div class="well">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong> Q10. Which operator is used to assign a value to a variable?</strong></p>
+                </div>
+                    <br>
+                    <label><input type="radio" name="questionTen" value="false" required> *</label><br>
+                    <label><input type="radio" name="questionTen" value="true"  class="correct" required> =</label><br>
+                    <label><input type="radio" name="questionTen" value="false" required> -</label><br>
+                    <label><input type="radio" name="questionTen" value="false" required> +.</label><br>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+                    </div>
+                </div>
+        </div>
+        <div id="tenth-p">
+            <p id="result">HERE IS YOUR SCORE:</p>
+        </div>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    </body>
+</html>
