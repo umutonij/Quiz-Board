@@ -8,6 +8,7 @@ You would need the following to access the website:
 * Smart phone/PC/laptop/Desktop or Tablet. 
 * A running network connection to the internet(either wireless or ethernet).
 * A web browser(Chrome is most recommendable).
+* Check out the link here that directs you to the Triangle tracker application: https://umutonij.github.io/Quiz-Board/
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT(BDD)
 In this quiz board one is encouraged to answer all the questions witout failure.
