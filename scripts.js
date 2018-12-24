@@ -9,10 +9,11 @@ $(document).ready(function() {
             answers.push($(this).prop('checked'));
         })
 
-        console.log(answers);
+        console.log(answers);                                                 
 
-
-        $('#result').text("Your score is "+ getScore(answers));
+        $('#result').text("Your score is: " + getScore(answers)+" %");
+        document.getElementById("tenth-p").style.display = "block";
+        $(".container").fadeOut();
     })
 });
 
@@ -23,9 +24,11 @@ function getScore(answers) {
 
     answers.forEach(function(answer) {
         if (answer === true) {
-            score++;
+            score+=5;
         }
     });
+
+    score = (score*100)/(answers.length*5);
 
     return score;
 }
