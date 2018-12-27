@@ -11,8 +11,8 @@ $(document).ready(function() {
 
         console.log(answers);                                                 
 
-        $('#result').text("Your score is: " + getScore(answers)+" %");
-        document.getElementById("tenth-p").style.display = "block";
+        $('#result').text("Your score is: " + getScore(answers)+" /50");
+        document.getElementById("quiz1").style.display = "block";
         $(".container").fadeOut();
     })
 });
@@ -27,8 +27,6 @@ function getScore(answers) {
             score+=5;
         }
     });
-
-    score = (score*100)/(answers.length*5);
 
     return score;
 }
